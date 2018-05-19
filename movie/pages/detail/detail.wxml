@@ -1,0 +1,17 @@
+<view class="container">
+  <view><image src="{{movie.images.large}}" mode="aspectFit"></image></view>
+  <view class="movie-content">
+    <view class="title">
+      <text>{{movie.title}}</text>
+    </view>
+    <view class="type">
+      <text>{{movie.rating.average}}分 / {{movie.genres}}</text>
+    </view>
+    <view class="pubdate">
+      上映时间: {{movie.year}}  {{movie.countries}}
+    </view>
+    <view class="summary">
+      电影简介：<text>{{movie.summary}}</text>
+    </view>
+  </view>
+</view>

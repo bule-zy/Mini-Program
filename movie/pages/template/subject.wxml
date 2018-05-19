@@ -1,0 +1,12 @@
+<template name="subjectList">
+  <view class="move-list">
+    <block wx:for="{{movies}}" wx:key="{{index}}">
+        <view class="move-list-item" id="{{item.id}}" bindtap="detail">
+          <image src='{{item.images.large}}'></image>
+          <view class="move-info">
+              <text>片名：{{item.title}}\n主演：{{item.cast}}\n导演：{{item.dir}}\n类型：{{item.genres}}\n时间：{{item.year}}</text>
+          </view>
+        </view>
+    </block>  
+  </view>  
+</template>

@@ -1,0 +1,18 @@
+<view class="content">
+  <view class="search">
+    <input class="input" bindinput='bindKeyInput'/>
+    <button bindtap="search" hover-class="btnClick">查询</button>
+  </view>
+  <text class="inputShow">你要搜索：{{inputValue}}</text>
+  <import src="../template/subject.wxml"/>
+  <template is="subjectList" data="{{movies}}"/>
+  <view class="modal-mask" bindtap="hideModal" hidden="{{hiddenModal}}">
+    <view class="modal-title">提示</view>
+    <view class="modal-content">
+      请输入搜索关键字
+    </view>
+    <view class="modal-footer">
+      <view class="btn-confirm" bindtap="onConfirm" data-status="confirm">确定</view>
+    </view>
+  </view>
+</view>

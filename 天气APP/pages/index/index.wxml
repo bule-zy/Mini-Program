@@ -1,0 +1,23 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="today">
+    <view class="info">
+      <view class="temp">{{today.wendu}}℃</view>
+      <view class="weather">{{todayInfo.type}} {{todayInfo.fengxiang}} {{todayInfo.fengli}}</view>
+      <view class="tips">友情提示：{{today.ganmao}}<text class="city">{{city}}</text></view>
+    </view>
+  </view>
+  <import src="../template/tem.wxml"/>
+  <view class="future">
+    <block wx:for="{{future}}" wx:key="{{date}}">
+      <template is="future-item" data="{{item}}"/>
+      <!-- <view class="future-item">
+        <view>{{item.date}}</view>
+        <view>{{item.high}}</view>
+        <view>{{item.fengli}}</view>
+        <view>{{item.low}}</view>
+        <view>{{item.type}}</view>
+      </view> -->
+    </block>    
+  </view>
+</view>

@@ -1,0 +1,40 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/detail/detail",
+    "pages/query/query",
+    
+    "pages/moveTop/moveTop"
+    
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "电影小程序",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#707070",
+    "selectedColor": "#d81e06",
+    "list": [
+      {
+        "iconPath": "/asset/img/index.png",
+        "selectedIconPath": "/asset/img/index-s.png",
+        "pagePath": "pages/index/index",
+        "text": "当前热映"
+      },
+      {
+        "iconPath": "/asset/img/bar.png",
+        "selectedIconPath": "/asset/img/bar-s.png",
+        "pagePath": "pages/moveTop/moveTop",
+        "text": "影片排行榜"
+      },
+      {
+        "iconPath": "/asset/img/search.png",
+        "selectedIconPath": "/asset/img/search-s.png",
+        "pagePath": "pages/query/query",
+        "text": "搜索"
+      }
+    ]
+  }
+}
